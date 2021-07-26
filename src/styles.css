@@ -14,6 +14,8 @@ blockquote {
   .container {
     max-width: 100%;
   }
+  .slide-wrapper {
+  }
 }
 
 a {
@@ -24,11 +26,43 @@ nav {
   background: #1d1d27;
 }
 
-.nav-link {
+.nav-button.nav-link {
   color: #eee !important;
   text-transform: uppercase;
+  background: transparent !important;
+  margin-right: 25px;
 }
 
-.nav-link:hover {
+.nav-button.nav-link:hover {
   color: #ef6200 !important;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.owl-next {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.owl-nav .ng-star-inserted {
+  height: 0 !important;
+  color: transparent;
+  background: none;
+}
+
+.slide-wrapper {
+  max-height: 510px;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  background-color: transparent;
+  font-size: 4em;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent;
 }
