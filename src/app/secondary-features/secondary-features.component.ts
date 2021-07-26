@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-secondary-features",
@@ -6,6 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./secondary-features.component.css"],
 })
 export class SecondaryFeaturesComponent implements OnInit {
+  @Input() public feature;
+
   constructor() {}
 
   ngOnInit(): void {}

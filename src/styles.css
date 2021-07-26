@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-weight: 300;
+}
+
+p,
+a,
+blockquote,
+button,
+blockquote {
+  font-family: Museo300, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #1d1d27;
+}
+
+.nav-link {
+  color: #eee !important;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #ef6200 !important;
+}
