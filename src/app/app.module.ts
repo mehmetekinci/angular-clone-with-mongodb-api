@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
@@ -9,6 +8,8 @@ import { SecondaryFeaturesComponent } from "./secondary-features/secondary-featu
 import { PrimaryFeaturesComponent } from "./primary-features/primary-features.component";
 import { AboutComponent } from "./about/about.component";
 import { FooterComponent } from "./footer/footer.component";
+import { HttpClientModule } from "@angular/common/http";
+import { ContactComponent } from "./contact/contact.component";
 
 @NgModule({
   declarations: [
@@ -19,8 +20,9 @@ import { FooterComponent } from "./footer/footer.component";
     PrimaryFeaturesComponent,
     AboutComponent,
     FooterComponent,
+    ContactComponent,
   ],
-  imports: [BrowserModule, MDBBootstrapModule.forRoot()],
+  imports: [BrowserModule, MDBBootstrapModule.forRoot(), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
