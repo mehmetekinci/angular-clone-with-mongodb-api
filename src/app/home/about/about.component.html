@@ -1,0 +1,28 @@
+<!-- Section: Contact v.2 -->
+<section style="background: #313140" class="py-5">
+  <div class="container">
+    <!-- Section heading -->
+    <h2 style="color: #dbdbea" class="h1-responsive font-weight-bold">
+      {{ about.title }}
+    </h2>
+    <!-- Section description -->
+    <div
+      style="color: #dbdbea"
+      class="w-responsive mb-3"
+      *ngFor="let content of about.content"
+    >
+      {{ content }}
+    </div>
+    <img
+      width="200"
+      height="128"
+      src="/assets/images/deRoostermakers-logo-650px.png"
+      alt="logo"
+    />
+    <p style="color: #dbdbea">deRoostermakers B.V.</p>
+    <button style="background: #ef6200; font-size: 12px" class="w-3">
+      LEES MEER
+    </button>
+  </div>
+</section>
+<!-- Section: Contact v.2 -->

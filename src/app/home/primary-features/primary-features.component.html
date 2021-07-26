@@ -1,0 +1,34 @@
+<!--Section: Features v.1-->
+<section
+  style="background: #313140; padding-bottom: 20px; margin-top: -10px"
+  *ngIf="feature.header !== undefined"
+  class="text-center"
+>
+  <div class="container">
+    <!--Section heading-->
+    <h2 style="color: #dbdbea" class="h1 py-5 font-weight-bold">
+      {{ feature.header }}
+    </h2>
+    <!--Section description-->
+    <p style="color: #dbdbea" class="px-5 mb-5 pb-3 lead grey-text">
+      {{ feature.text }}
+    </p>
+
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-6 col-lg-3" *ngFor="let item of feature.items">
+        <img [src]="'assets' + item.image" alt="" />
+        <h5 style="color: #ef6200" class="font-weight-bold mt-3">
+          {{ item.title }}
+        </h5>
+        <p style="color: #dbdbea" class="grey-text">
+          {{ item.content }}
+        </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+</section>
+<!--Section: Features v.1-->

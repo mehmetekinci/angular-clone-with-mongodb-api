@@ -1,0 +1,42 @@
+<div style="position: relative" class="wrapper">
+  <img
+    style="
+      position: absolute;
+      width: 220px;
+      height: 138px;
+      z-index: 100;
+      left: 10%;
+    "
+    src="assets/images/deRoostermakers-logo-650px.png"
+    alt=""
+  />
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let item of slider">
+      <ng-template carouselSlide>
+        <div class="slide-wrapper">
+          <div>
+            <div></div>
+            <div
+              style="position: absolute; top: 40%; left: 15%; max-width: 700px"
+            >
+              <h1
+                style="
+                  color: white;
+                  background: #f29a25;
+                  font-weight: 400;
+                  width: fit-content;
+                  padding: 5px 10px;
+                  margin-bottom: 25px;
+                "
+              >
+                {{ item.title }}
+              </h1>
+              <p style="color: white">{{ item.content }}</p>
+            </div>
+          </div>
+          <img [src]="'assets' + item.image" alt="" />
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
