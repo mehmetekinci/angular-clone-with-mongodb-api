@@ -1,3 +1,10 @@
-<app-primary-features></app-primary-features>
-<app-secondary-features></app-secondary-features>
-<app-about></app-about>
+<app-primary-features
+  *ngIf="features !== undefined"
+  [feature]="features[0]"
+></app-primary-features>
+<app-secondary-features
+  *ngIf="features !== undefined"
+  [feature]="features[1]"
+></app-secondary-features>
+<app-about *ngIf="about !== undefined" [about]="about"></app-about>
+<app-contact *ngIf="contact !== undefined" [contact]="contact"></app-contact>
