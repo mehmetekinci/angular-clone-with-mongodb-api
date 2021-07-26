@@ -37,6 +37,7 @@ export class AppComponent {
       console.log(this.about);
       console.log(this.contact);
       console.log(this.footer);
+      console.log(this.slider);
     });
   }
 }

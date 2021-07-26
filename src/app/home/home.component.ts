@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { ApiService } from "src/services/api.service";
 
 @Component({
   selector: "app-home",
