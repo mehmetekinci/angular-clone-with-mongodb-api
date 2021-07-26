@@ -1,0 +1,12 @@
+import { Component, OnInit } from "@angular/core";
+
+@Component({
+  selector: "app-secondary-features",
+  templateUrl: "./secondary-features.component.html",
+  styleUrls: ["./secondary-features.component.css"],
+})
+export class SecondaryFeaturesComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
